@@ -1,0 +1,10 @@
+^D:\BATTOLCITY\BATTOLCITY\СТРОИТЬ\CMAKEFILES\D82CB0C76689DD0523EBD79A5279D97C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/BattolCity/BattolCity -BD:/BattolCity/BattolCity/строить --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/BattolCity/BattolCity/строить/BattolCity.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

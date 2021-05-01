@@ -1,0 +1,10 @@
+^D:\BATTOLCITY\BATTOLCITY\ВНЕШНИЙ\GLFW\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/BattolCity/BattolCity -BD:/BattolCity/BattolCity/строить --check-stamp-file D:/BattolCity/BattolCity/строить/внешний/glfw/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
