@@ -12,3 +12,6 @@ set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 
 add_subdirectory (внешний/glfw)
 target_link_libraries(${PROGRAM_NAME} glfw)
+
+add_subdirectory (внешний/glad)
+target_link_libraries(${PROGRAM_NAME} glad)
