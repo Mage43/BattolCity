@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.19.8 FATAL_ERROR)
 set (PROGRAM_NAME BattolCity)
 project (${PROGRAM_NAME})
 
+set(CMAKE_CXX_STANDARD 19)
+
 add_executable(${PROGRAM_NAME} исходник/main.cpp)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)

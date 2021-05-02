@@ -3,3 +3,5 @@ D:/BattolCity/BattolCity/строить/CMakeFiles/ALL_BUILD.dir
 D:/BattolCity/BattolCity/строить/CMakeFiles/ZERO_CHECK.dir
 D:/BattolCity/BattolCity/строить/внешний/glfw/CMakeFiles/ALL_BUILD.dir
 D:/BattolCity/BattolCity/строить/внешний/glfw/src/CMakeFiles/glfw.dir
+D:/BattolCity/BattolCity/строить/внешний/glad/CMakeFiles/glad.dir
+D:/BattolCity/BattolCity/строить/внешний/glad/CMakeFiles/ALL_BUILD.dir

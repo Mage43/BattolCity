@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\БоевойГород\BattolCity\стройка\CMakeFiles\7a876a93b66ae1843e7a3409c4fa2bb3\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E490058F-08BF-3A2B-A9C6-B8E3BCD0F602}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
