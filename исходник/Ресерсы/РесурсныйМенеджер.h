@@ -25,6 +25,7 @@ public:
 
 	std::shared_ptr< –ендор ::Ўейдерна€ѕрограмма> загрускаЎедоры(const std::string& »м€Ўедора, const std::string& ¬ершинныйѕуть, const std::string& ‘рагментныйѕуть);
 	std::shared_ptr< –ендор::Ўейдерна€ѕрограмма> получатьЎудоровѕрограмм(const std::string& »м€Ўедора);
+	void загруска“екстур(const std::string& »м€“екстур, const std::string& ѕуть“екстуры);
 
 
 

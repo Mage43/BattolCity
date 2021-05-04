@@ -92,6 +92,8 @@ int main(int argc, char** argv)
         std::cerr << "Не могу создать Шейдерная Программа: "<<"загрускаШедоры" << std::endl;
         return -1;
        }
+
+       ресурсныйМенеджер.загрускаТекстур("чайник","ресерсы/текстуры/pngfind.com-boy-png-17357.png");
        
         GLuint точка_vbo = 0;
         glGenBuffers(1, &точка_vbo);

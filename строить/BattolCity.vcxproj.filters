@@ -18,6 +18,9 @@
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\BattolCity\BattolCity\CMakeLists.txt" />

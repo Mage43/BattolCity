@@ -5,6 +5,10 @@
 #include<fstream>
 #include<iostream>
 
+#define STB_IMAGE_IMPLEMENTATION
+#define STBI_ONLY_PNG
+#include "stb_image.h"
+
 –есурсныйћенеджер::–есурсныйћенеджер(const std::string& ѕутьисполнимый)
 {
 	size_t нашел = ѕутьисполнимый.find_last_of("/\\");
@@ -69,4 +73,23 @@
 
 	 return nullptr;
 	 
+ }
+
+
+ void –есурсныйћенеджер::загруска“екстур(const std::string& »м€“екстур, const std::string& ѕуть“екстуры)
+ {
+	 int канал = 0;
+	 int ширена = 0;
+	 int высота = 0;
+     stbi_set_flip_vertically_on_load(true);
+	unsigned char* пиксель = stbi_load(std::string(п_ѕуть + "/" + ѕуть“екстуры).c_str(), &ширена, &высота, &канал, 0);
+	
+
+	if (!пиксель)
+	{
+		std::cerr << "Ќе загружен фота: " << »м€“екстур << std::endl;
+		return;
+	}
+
+	stbi_image_free(пиксель);
  }
