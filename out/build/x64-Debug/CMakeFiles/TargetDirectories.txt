@@ -1,0 +1,11 @@
+D:/BattolCity/BattolCity/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/CMakeFiles/BattolCity.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/внешний/glfw/CMakeFiles/edit_cache.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/внешний/glfw/CMakeFiles/rebuild_cache.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/внешний/glfw/src/CMakeFiles/rebuild_cache.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/внешний/glfw/src/CMakeFiles/glfw.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/внешний/glfw/src/CMakeFiles/edit_cache.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/внешний/glad/CMakeFiles/glad.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/внешний/glad/CMakeFiles/edit_cache.dir
+D:/BattolCity/BattolCity/out/build/x64-Debug/внешний/glad/CMakeFiles/rebuild_cache.dir
