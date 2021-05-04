@@ -1,3 +1,0 @@
-D:/БоевойГород/BattolCity/стройка/CMakeFiles/BattolCity.dir
-D:/БоевойГород/BattolCity/стройка/CMakeFiles/ALL_BUILD.dir
-D:/БоевойГород/BattolCity/стройка/CMakeFiles/ZERO_CHECK.dir

@@ -1,6 +1,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
+#include "Рендор/ШейдернаяПрограмма.h"
+
 #include <iostream>
 
 GLfloat точка[] = {
@@ -98,23 +100,15 @@ int main(void)
 
     glClearColor(1, 1, 0, 1);
 
-    GLuint vs = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vs, 1, &вершинный_шейдер, nullptr);
-    glCompileShader(vs);
-
-
-    GLuint fs = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fs, 1, &фрагментный_шейдер, nullptr);
-    glCompileShader(fs);
-
-
-    GLuint шейдерная_программа = glCreateProgram();
-    glAttachShader(шейдерная_программа, vs);
-    glAttachShader(шейдерная_программа, fs);
-    glLinkProgram(шейдерная_программа);
-
-    glDeleteShader(vs);
-    glDeleteShader(fs);
+    std::string ВершинныйШейдер(вершинный_шейдер);
+    std::string ФрагментныйПрограмма(фрагментный_шейдер);
+    Рендор::ШейдернаяПрограмма шейдернаяПрограмма(ВершинныйШейдер, ФрагментныйПрограмма);
+    
+    if (!шейдернаяПрограмма.возКапеляции())
+    {
+        std::cerr << "Не могу создать ШейдернаяПрограмма " << std::endl;
+        return -1;
+    }
 
     GLuint точка_vbo = 0;
     glGenBuffers(1, &точка_vbo);
@@ -148,7 +142,7 @@ int main(void)
         glClear(GL_COLOR_BUFFER_BIT);
 
 
-        glUseProgram(шейдерная_программа);
+        шейдернаяПрограмма.вкл();
         glBindVertexArray(vao);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 

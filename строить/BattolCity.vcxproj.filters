@@ -4,11 +4,22 @@
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ШейдернаяПрограмма.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ШейдернаяПрограмма.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\BattolCity\BattolCity\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7CFC9917-3FEE-3B8C-9B38-B14B90B475B4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{1384F0FE-E979-3270-84E4-F2A17C6354E2}</UniqueIdentifier>
     </Filter>
