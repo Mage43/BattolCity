@@ -1,10 +1,11 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-
-#include "–ендор/Ўейдерна€ѕрограмма.h"
-
 #include <iostream>
+#include "–ендор/Ўейдерна€ѕрограмма.h"
 #include "–есерсы/–есурсныйћенеджер.h"
+#include "–ендор/“екстуры2D.h"
+
+
 
 GLfloat точка[] = {
   0.0f, 0.5f, 0.0f,
@@ -17,6 +18,13 @@ GLfloat цвет[] = {
     0.0f, 1.0f, 0.0f,
     0.0f, 0.0f, 1.0f
 };
+
+GLfloat “екстур–асположение[] = {
+    0.5f, 1.0f, 
+    1.0f, 0.0f,
+    0.0f, 0.0f
+};
+
 
 
 int g_window–азмерX = 640;
@@ -93,7 +101,7 @@ int main(int argc, char** argv)
         return -1;
        }
 
-       ресурсныйћенеджер.загруска“екстур("чайник","ресерсы/текстуры/pngfind.com-boy-png-17357.png");
+       auto tex = ресурсныйћенеджер.загруска“екстур("чайник","ресерсы/текстуры/pngfind.com-boy-png-17357.png");
        
         GLuint точка_vbo = 0;
         glGenBuffers(1, &точка_vbo);
@@ -107,10 +115,16 @@ int main(int argc, char** argv)
         glBindBuffer(GL_ARRAY_BUFFER, цвет_vbo);
         glBufferData(GL_ARRAY_BUFFER, sizeof(цвет), цвет, GL_STATIC_DRAW);
 
+        GLuint текс_во = 0;
+        glGenBuffers(1, &текс_во);
+        glBindBuffer(GL_ARRAY_BUFFER, текс_во);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(“екстур–асположение), “екстур–асположение, GL_STATIC_DRAW);
 
         GLuint vao = 0;
         glGenVertexArrays(1, &vao);
         glBindVertexArray(vao);
+
+      
 
         glEnableVertexAttribArray(0);
         glBindBuffer(GL_ARRAY_BUFFER, точка_vbo);
@@ -119,6 +133,13 @@ int main(int argc, char** argv)
         glEnableVertexAttribArray(1);
         glBindBuffer(GL_ARRAY_BUFFER, цвет_vbo);
         glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+
+        glEnableVertexAttribArray(2);
+        glBindBuffer(GL_ARRAY_BUFFER, текс_во);
+        glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, nullptr);
+
+        загрузитьЎейдонуюѕрограму->вкл();
+        загрузитьЎейдонуюѕрограму->сохраниеть«начение("ацй", 0);
 
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
@@ -129,6 +150,7 @@ int main(int argc, char** argv)
 
             загрузитьЎейдонуюѕрограму->вкл();
             glBindVertexArray(vao);
+            tex->св€зывать();
             glDrawArrays(GL_TRIANGLES, 0, 3);
 
             /* Swap front and back buffers */

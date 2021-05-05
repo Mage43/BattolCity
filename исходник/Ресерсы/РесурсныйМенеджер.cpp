@@ -93,15 +93,11 @@
 	}
 
 	std::shared_ptr< Рендор::Текстуры2D>новаяТекстура = п_Текстур.emplace(ИмяТекстур, std::make_shared< Рендор::Текстуры2D>(ширена, высота, пиксель, канал,
-		                                                                                                                   GL_NEAREST, GL_CLAMP_TO_EDGE)).first->second;
+		GL_NEAREST, GL_CLAMP_TO_EDGE)).first->second;
     stbi_image_free(пиксель);
 	return новаяТекстура;
  }
 
- /*std::shared_ptr<Рендор::Текстуры2D> РесурсныйМенеджер::получатьТекстуры2D(const std::string& ИмяТекстур)
- {
-	 return std::shared_ptr<Рендор::Текстуры2D>();
- }*/
 
  std::shared_ptr< Рендор::Текстуры2D> РесурсныйМенеджер::получатьТекстуры2D(const std::string& ИмяТекстур)
  { 

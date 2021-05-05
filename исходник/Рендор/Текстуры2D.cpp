@@ -1,6 +1,5 @@
 #include "Текстуры2D.h"
-#include "../Ресерсы/РесурсныйМенеджер.h"
-#include <string>
+
 
 namespace Рендор {
 	Текстуры2D::Текстуры2D(const GLint ширену, GLint высота,
@@ -15,13 +14,17 @@ namespace Рендор {
 		{
 		case 4:
 			п_режим = GL_RGBA;
+			break;
 		case 3:
 			п_режим = GL_RGB;
+			break;
 		default:
+			п_режим = GL_RGB;
 			break;
 		}
 
 		glGenTextures(1, &п_Текстур);
+		glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, п_Текстур);
 		glTexImage2D(GL_TEXTURE_2D, 0, п_режим, п_ширены, п_высоты, 0, п_режим, GL_UNSIGNED_BYTE, данные);
 
@@ -65,6 +68,6 @@ namespace Рендор {
 
 	void Текстуры2D::связывать()const
 	{
-
+		glBindTexture(GL_TEXTURE_2D, п_Текстур);
 	}
 }
