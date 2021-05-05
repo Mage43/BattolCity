@@ -13,7 +13,8 @@ add_executable(${PROJECT_NAME}
 	исходник/Ресерсы/stb_image.h
 	исходник/Рендор/Текстуры2D.cpp
 	исходник/Рендор/Текстуры2D.h
-	
+        исходник/Рендор/Спрайт.cpp
+        исходник/Рендор/Спрайт.h
 	)
 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17) 
