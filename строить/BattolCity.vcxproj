@@ -367,6 +367,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.cpp" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.h" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\stb_image.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\BattolCity\BattolCity\строить\ZERO_CHECK.vcxproj">

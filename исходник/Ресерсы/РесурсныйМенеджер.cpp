@@ -1,5 +1,6 @@
 #include "РесурсныйМенеджер.h"
 #include "../Рендор/ШейдернаяПрограмма.h"
+#include "../Рендор/Текстуры2D.h"
 
 #include<sstream>
 #include<fstream>
@@ -76,7 +77,7 @@
  }
 
 
- void РесурсныйМенеджер::загрускаТекстур(const std::string& ИмяТекстур, const std::string& ПутьТекстуры)
+ std::shared_ptr< Рендор::Текстуры2D> РесурсныйМенеджер::загрускаТекстур(const std::string& ИмяТекстур, const std::string& ПутьТекстуры)
  {
 	 int канал = 0;
 	 int ширена = 0;
@@ -88,8 +89,33 @@
 	if (!пиксель)
 	{
 		std::cerr << "Не загружен фота: " << ИмяТекстур << std::endl;
-		return;
+		return nullptr;
 	}
 
-	stbi_image_free(пиксель);
+	std::shared_ptr< Рендор::Текстуры2D>новаяТекстура = п_Текстур.emplace(ИмяТекстур, std::make_shared< Рендор::Текстуры2D>(ширена, высота, пиксель, канал,
+		                                                                                                                   GL_NEAREST, GL_CLAMP_TO_EDGE)).first->second;
+    stbi_image_free(пиксель);
+	return новаяТекстура;
  }
+
+ /*std::shared_ptr<Рендор::Текстуры2D> РесурсныйМенеджер::получатьТекстуры2D(const std::string& ИмяТекстур)
+ {
+	 return std::shared_ptr<Рендор::Текстуры2D>();
+ }*/
+
+ std::shared_ptr< Рендор::Текстуры2D> РесурсныйМенеджер::получатьТекстуры2D(const std::string& ИмяТекстур)
+ { 
+	 ТекстурыПлан::const_iterator им = п_Текстур.find(ИмяТекстур);
+	 if (им != п_Текстур.end())
+	 {
+		 return им->second;
+	 }
+	 std::cerr << "Не нашли шейдор програма: " << ИмяТекстур << std::endl;
+
+	 return nullptr;
+
+
+ }
+ 
+	
+ 

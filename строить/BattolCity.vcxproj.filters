@@ -10,6 +10,9 @@
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ШейдернаяПрограмма.h">
@@ -19,6 +22,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

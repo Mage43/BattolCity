@@ -7,6 +7,7 @@
 namespace Рендор
 {
 	class ШейдернаяПрограмма;
+	class Текстуры2D;
 }
 
 
@@ -25,8 +26,10 @@ public:
 
 	std::shared_ptr< Рендор ::ШейдернаяПрограмма> загрускаШедоры(const std::string& ИмяШедора, const std::string& ВершинныйПуть, const std::string& ФрагментныйПуть);
 	std::shared_ptr< Рендор::ШейдернаяПрограмма> получатьШудоровПрограмм(const std::string& ИмяШедора);
-	void загрускаТекстур(const std::string& ИмяТекстур, const std::string& ПутьТекстуры);
-
+	
+	
+	std::shared_ptr< Рендор::Текстуры2D>  загрускаТекстур(const std::string& ИмяТекстур, const std::string& ПутьТекстуры);
+	std::shared_ptr< Рендор::Текстуры2D> получатьТекстуры2D(const std::string& ИмяТекстур);
 
 
 private:
@@ -35,6 +38,8 @@ private:
 	typedef std::map<const std::string, std::shared_ptr< Рендор::ШейдернаяПрограмма>> ШейдернаяПрограммаПлан;
 	ШейдернаяПрограммаПлан п_ШейдернаяПрограмма;
 
+	typedef std::map < const std::string, std::shared_ptr< Рендор::Текстуры2D>> ТекстурыПлан;
+	ТекстурыПлан п_Текстур;
 
 	std::string п_Путь;
 };
