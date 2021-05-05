@@ -1,5 +1,7 @@
 #include "ШейдернаяПрограмма.h"
 
+#include<glm/gtc/type_ptr.hpp>
+
 #include <iostream>
 
 namespace Рендор {
@@ -98,6 +100,13 @@ namespace Рендор {
 	 void ШейдернаяПрограмма::сохраниетьЗначение(const std::string& имя, GLint значение)
 	 {
 		 glUniform1i(glGetUniformLocation(идиф_шедор, имя.c_str()), значение);
+
+	 }
+
+
+	 void ШейдернаяПрограмма::сохранитьМатрицу4(const std::string& имя, glm::mat4& матрица)
+	 {
+		 glUniformMatrix4fv(glGetUniformLocation(идиф_шедор, имя.c_str()),1, GL_FALSE, glm::value_ptr(матрица));
 
 	 }
 }

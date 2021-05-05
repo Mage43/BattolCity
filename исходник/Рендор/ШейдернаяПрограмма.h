@@ -2,6 +2,8 @@
 
 #include <glad/glad.h>
 #include <string>
+#include <glm/mat4x4.hpp>
+
 
 namespace –ендор {
     class  Ўейдерна€ѕрограмма
@@ -12,7 +14,7 @@ namespace –ендор {
         bool воз апел€ции()const { return проверка_ омпел€цииЎедор; }
         void вкл() const;
         void сохраниеть«начение(const std::string& им€, GLint значение);
-
+        void сохранитьћатрицу4(const std::string& им€, glm::mat4 & матрица);
 
         Ўейдерна€ѕрограмма() = delete;
         Ўейдерна€ѕрограмма(Ўейдерна€ѕрограмма&) = delete;

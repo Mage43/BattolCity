@@ -1,6 +1,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <glm/vec2.hpp>
+#include <glm/mat4x4.hpp>
+#include<glm/gtc/matrix_transform.hpp>
 
 #include <iostream>
 
@@ -11,9 +13,9 @@
 
 
 GLfloat точка[] = {
-  0.0f, 0.5f, 0.0f,
-  0.5f,-0.5f, 0.0f,
- -0.5f,-0.5f, 0.0f
+  0.0f, 50.f, 0.0f,
+  50.f,-50.f, 0.0f,
+ -50.f,-50.f, 0.0f
 };
 
 GLfloat цвет[] = {
@@ -143,6 +145,17 @@ int main(int argc, char** argv)
         загрузитьЎейдонуюѕрограму->вкл();
         загрузитьЎейдонуюѕрограму->сохраниеть«начение("ацй", 0);
 
+        glm::mat4 модельћатриц_1 = glm::mat4(1.f);
+        модельћатриц_1 = glm::translate(модельћатриц_1, glm::vec3(50.f, 50.f, 0.f));
+
+        glm::mat4 модельћатриц_2 = glm::mat4(1.f);
+        модельћатриц_2 = glm::translate(модельћатриц_2, glm::vec3(590.f, 50.f, 0.f));
+
+
+        glm::mat4 проекци€ћатриц = glm::ortho(0.f,static_cast<float>( g_window–азмер.x), 0.f, static_cast<float>(g_window–азмер.y), -100.f, 100.f);
+
+        загрузитьЎейдонуюѕрограму->сохранитьћатрицу4("projectionMat", проекци€ћатриц);
+        
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
         {
@@ -153,6 +166,10 @@ int main(int argc, char** argv)
             загрузитьЎейдонуюѕрограму->вкл();
             glBindVertexArray(vao);
             tex->св€зывать();
+            загрузитьЎейдонуюѕрограму->сохранитьћатрицу4("modelMat", модельћатриц_1);
+            glDrawArrays(GL_TRIANGLES, 0, 3);
+
+            загрузитьЎейдонуюѕрограму->сохранитьћатрицу4("modelMat", модельћатриц_2);
             glDrawArrays(GL_TRIANGLES, 0, 3);
 
             /* Swap front and back buffers */
