@@ -1,6 +1,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <glm/vec2.hpp>
+
 #include <iostream>
+
 #include "Рендор/ШейдернаяПрограмма.h"
 #include "Ресерсы/РесурсныйМенеджер.h"
 #include "Рендор/Текстуры2D.h"
@@ -26,15 +29,14 @@ GLfloat ТекстурРасположение[] = {
 };
 
 
+glm::ivec2 g_windowРазмер(640, 480);
 
-int g_windowРазмерX = 640;
-int g_windowРазмерY = 480;
 
 void glfwОбратноеВызовРазмераОкна(GLFWwindow* window, int шрена, int высота)
 {
-    g_windowРазмерX = шрена;
-    g_windowРазмерY = высота;
-    glViewport(0, 0, g_windowРазмерX, g_windowРазмерY);
+    g_windowРазмер.x = шрена;
+    g_windowРазмер.y = высота;
+    glViewport(0, 0, шрена, высота);
 }
 
 void glfwОбратноеВызовНажатие(GLFWwindow* window, int клава, int сконированиеКода, int действовать, int режим)
@@ -65,7 +67,7 @@ int main(int argc, char** argv)
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     /* Create a windowed mode window and its OpenGL context */
-    GLFWwindow* window = glfwCreateWindow(g_windowРазмерX, g_windowРазмерY, "BattolCeti", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(g_windowРазмер.x, g_windowРазмер.y, "BattolCeti", nullptr, nullptr);
     if (!window)
     {
         std::cout << "ошибка при открытия окна " << std::endl;
