@@ -36,6 +36,9 @@ namespace Рендор{
 		glm::vec2 п_позиция;
 		glm::vec2 п_размер;
 		float  п_повород;
+		GLuint п_VAO;
+		GLuint п_вершинныйКоординатыVBO;
+		GLuint п_ТекстурКоординатыVBO;
 
 	};
 }

@@ -1,6 +1,7 @@
 #include "–есурсныйћенеджер.h"
 #include "../–ендор/Ўейдерна€ѕрограмма.h"
 #include "../–ендор/“екстуры2D.h"
+#include "../–ендор/—прайт.h"
 
 #include<sstream>
 #include<fstream>
@@ -106,10 +107,54 @@
 	 {
 		 return им->second;
 	 }
-	 std::cerr << "Ќе нашли шейдор програма: " << »м€“екстур << std::endl;
+	 std::cerr << "Ќе нашли текстур : " << »м€“екстур << std::endl;
 
 	 return nullptr;
 
+
+ }
+
+ std::shared_ptr< –ендор::—прайт>  –есурсныйћенеджер::загруска—прайт(const std::string& »м€—прайт,
+	                                                                 const std::string& »м€“екстур,
+	                                                                 const std::string& »м€Ўедора,
+	                                                                 const unsigned int спрайтЎирена,
+	                                                                 const unsigned int спрайт¬ысота)
+ {
+	 auto п“екстур = получать“екстуры2D(»м€“екстур);
+	 if (!п“екстур)
+	 {
+		 std::cerr << "Ќе загружен текстуры: " << »м€“екстур<<"в спрайте: "<< »м€—прайт << std::endl;
+		 return nullptr;
+
+	 }
+
+
+	 auto пЎейдор = получатьЎудоровѕрограмм(»м€Ўедора);
+	 if (!пЎейдор)
+	 {
+		 std::cerr << "Ќе загружен шедоров программ: " << »м€“екстур << "в спрайте: " << »м€—прайт << std::endl;
+		 return nullptr;
+
+	 }
+
+	 std::shared_ptr< –ендор::—прайт>нова€—прайт = п_—прайт.emplace(»м€—прайт, std::make_shared< –ендор::—прайт>(п“екстур, пЎейдор,
+		                                                                                                         glm::vec2(0.f, 0.f), 
+		                                                                                                         glm::vec2(спрайтЎирена, спрайт¬ысота))).first->second;
+	 
+	 return нова€—прайт;
+	 
+ }
+
+ std::shared_ptr< –ендор::—прайт>  –есурсныйћенеджер::получать—прайт(const std::string& »м€—прайт)
+ {
+	 —прайтѕлан::const_iterator им = п_—прайт.find(»м€—прайт);
+	 if (им != п_—прайт.end())
+	 {
+		 return им->second;
+	 }
+	 std::cerr << "Ќе нашли спрайт : " << »м€—прайт << std::endl;
+
+	 return nullptr;
 
  }
  

@@ -4,10 +4,12 @@
 #include<memory>
 #include<map>
 
+
 namespace –ендор
 {
 	class Ўейдерна€ѕрограмма;
 	class “екстуры2D;
+	class  —прайт;
 }
 
 
@@ -32,6 +34,16 @@ public:
 	std::shared_ptr< –ендор::“екстуры2D> получать“екстуры2D(const std::string& »м€“екстур);
 
 
+	std::shared_ptr< –ендор::—прайт> загруска—прайт(const std::string& »м€—прайт,
+	                                                const std::string& »м€“екстур,
+		                                            const std::string& »м€Ўедора,
+	                                                const unsigned int спрайтЎирена, 
+		                                            const unsigned int спрайт¬ысота);
+
+	std::shared_ptr< –ендор::—прайт> получать—прайт(const std::string& »м€—прайт);
+
+
+
 private:
 	 std::string получить—троку‘айла(const std::string& относительный‘айлаѕути);
 
@@ -40,6 +52,9 @@ private:
 
 	typedef std::map < const std::string, std::shared_ptr< –ендор::“екстуры2D>> “екстурыѕлан;
 	“екстурыѕлан п_“екстур;
+
+	typedef std::map < const std::string, std::shared_ptr< –ендор::—прайт>> —прайтѕлан;
+	—прайтѕлан п_—прайт;
 
 	std::string п_ѕуть;
 };
