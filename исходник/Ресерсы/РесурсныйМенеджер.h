@@ -1,8 +1,9 @@
 #pragma once 
 
-#include<string>
-#include<memory>
-#include<map>
+#include <string>
+#include <memory>
+#include <map>
+#include <vector>
 
 
 namespace –ендор
@@ -30,7 +31,7 @@ public:
 	std::shared_ptr< –ендор::Ўейдерна€ѕрограмма> получатьЎудоровѕрограмм(const std::string& »м€Ўедора);
 	
 	
-	std::shared_ptr< –ендор::“екстуры2D>  загруска“екстур(const std::string& »м€“екстур, const std::string& ѕуть“екстуры);
+	std::shared_ptr< –ендор::“екстуры2D> загруска“екстур(const std::string& »м€“екстур, const std::string& ѕуть“екстуры);
 	std::shared_ptr< –ендор::“екстуры2D> получать“екстуры2D(const std::string& »м€“екстур);
 
 
@@ -38,14 +39,20 @@ public:
 	                                                const std::string& »м€“екстур,
 		                                            const std::string& »м€Ўедора,
 	                                                const unsigned int спрайтЎирена, 
-		                                            const unsigned int спрайт¬ысота);
+		                                            const unsigned int спрайт¬ысота,
+	                                                const std::string& расположение“екстур»м€ = "поумолчанию");
 
 	std::shared_ptr< –ендор::—прайт> получать—прайт(const std::string& »м€—прайт);
 
+	std::shared_ptr< –ендор::“екстуры2D> загруска“екстурјтлос(const std::string »м€“екстур, 
+		                                                      const std::string ѕуть“екстуры,
+		                                                      const std::vector<std::string>расположение“екстур,
+	                                                          const unsigned int расположение“екстурЎирена,
+	                                                          const unsigned int расположение“екстур¬ысота);
 
 
-private:
-	 std::string получить—троку‘айла(const std::string& относительный‘айлаѕути);
+private:                                               
+	 std::string получить—троку‘айла(const std::string& относительный‘айлаѕути) const;
 
 	typedef std::map<const std::string, std::shared_ptr< –ендор::Ўейдерна€ѕрограмма>> Ўейдерна€ѕрограммаѕлан;
 	Ўейдерна€ѕрограммаѕлан п_Ўейдерна€ѕрограмма;
