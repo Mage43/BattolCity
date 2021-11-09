@@ -7,18 +7,48 @@
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ШейдернаяПрограмма.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\Спрайт.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторБуффер.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ИндексБуффер.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Игра.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Танк.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ШейдернаяПрограмма.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Спрайт.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторБуффер.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ИндексБуффер.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.h">
@@ -27,10 +57,10 @@
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.h">
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Игра.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Спрайт.h">
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Танк.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

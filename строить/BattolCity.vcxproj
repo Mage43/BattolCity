@@ -364,13 +364,23 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\main.cpp" />
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ШейдернаяПрограмма.cpp" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ШейдернаяПрограмма.h" />
-    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.cpp" />
-    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.h" />
-    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\stb_image.h" />
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.cpp" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Текстуры2D.h" />
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\Спрайт.cpp" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Спрайт.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторБуффер.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторБуффер.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ИндексБуффер.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ИндексБуффер.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.h" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\stb_image.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Игра.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Игра.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Танк.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Танк.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\BattolCity\BattolCity\строить\ZERO_CHECK.vcxproj">
