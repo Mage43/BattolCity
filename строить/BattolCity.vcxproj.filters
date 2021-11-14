@@ -19,6 +19,12 @@
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ИндексБуффер.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторМножество.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\РасположениеВекторБуфера.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -46,6 +52,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ИндексБуффер.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторМножество.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\исходник\Рендор\РасположениеВекторБуфера.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.h">

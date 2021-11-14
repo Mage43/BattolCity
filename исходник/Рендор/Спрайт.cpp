@@ -51,27 +51,25 @@ namespace –ендор {
 			2, 3, 0
 		};
 
-		glGenVertexArrays(1, &п_VAO);
-		glBindVertexArray(п_VAO);
 
 		п_вектор оординатыЅуффер.инит(вершинный оординаты, 2 * 4 * sizeof(GLfloat));
-		glEnableVertexAttribArray(0);
-		glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, nullptr);
+		–асположение¬екторЅуфера расположение¬ектор оординаты;
+		расположение¬ектор оординаты.добавитьѕоплавок омпоновкиЁлемента(2, false);
+		п_¬екторћножество.добавитьЅуфер(п_вектор оординатыЅуффер, расположение¬ектор оординаты);
 
 		п_“екстур оординатыЅуффер.инит(“екстур оординаты, 2 * 4 * sizeof(GLfloat));
-		glEnableVertexAttribArray(1);
-		glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, nullptr);
+		–асположение¬екторЅуфера расположение“екстур оординаты;
+		расположение“екстур оординаты.добавитьѕоплавок омпоновкиЁлемента(2, false);
+		п_¬екторћножество.добавитьЅуфер(п_“екстур оординатыЅуффер, расположение“екстур оординаты);
 
 		п_индексЅуффер.инит(индекс, 6 * sizeof(GLuint));
 
-		glBindBuffer(GL_ARRAY_BUFFER, 0);       
-		glBindVertexArray(0);
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0); // обезательно полсле вертекс€ * –јЎ№* 
+		п_¬екторћножество.разв€зывать();
+		п_индексЅуффер.разв€зывать();
 
 	}
 	 —прайт::~—прайт()
 	{
-		glDeleteVertexArrays(1, &п_VAO);
 	}
 
 	void —прайт::отопрожение—пра()const
@@ -86,14 +84,14 @@ namespace –ендор {
 		модель = glm::translate(модель, glm::vec3(-0.5f * п_размер.x, -0.5f * п_размер.y, 0.f));
 		модель = glm::scale(модель, glm::vec3(п_размер, 1.f));
 
-		glBindVertexArray(п_VAO);
+		п_¬екторћножество.св€зывать();
 		п_пЎейдерна€ѕрограмма->сохранитьћатрицу4("modelMat", модель);
 
 		glActiveTexture(GL_TEXTURE0);
 		п_п“екстуры->св€зывать();
 
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
-		glBindVertexArray(0);
+		п_¬екторћножество.св€зывать();
 	}
 
 
