@@ -5,7 +5,7 @@
 #include <glad/glad.h>
 #include <glm/vec2.hpp>
 
-namespace Рендор { 
+namespace ДвижокРендеринга { 
 	class Текстуры2D
 	{
 	public:

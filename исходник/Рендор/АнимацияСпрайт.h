@@ -6,7 +6,7 @@
 #include <vector>
 
 
-namespace –ендор{
+namespace ƒвижок–ендеринга{
 
 	
 

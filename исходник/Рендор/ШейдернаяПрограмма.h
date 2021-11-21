@@ -5,7 +5,7 @@
 #include <glm/mat4x4.hpp>
 
 
-namespace –ендор {
+namespace ƒвижок–ендеринга {
     class  Ўейдерна€ѕрограмма
     { 
     public:

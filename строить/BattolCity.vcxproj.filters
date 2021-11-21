@@ -28,6 +28,9 @@
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\Рендор.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -57,10 +60,13 @@
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторМножество.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\исходник\Рендор\РасположениеВекторБуфера.h">
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\РасположениеВекторБуфера.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Рендор.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.h">

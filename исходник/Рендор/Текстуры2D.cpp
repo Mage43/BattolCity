@@ -1,7 +1,7 @@
 #include "Текстуры2D.h"
 
 
-namespace Рендор {
+namespace ДвижокРендеринга {
 	Текстуры2D::Текстуры2D(const GLint ширену, GLint высота,
 		const unsigned char* данные,
 		const unsigned int конал ,

@@ -114,8 +114,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message></Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/BattolCity/BattolCity/ресерсы D:/BattolCity/BattolCity/строить/создать/Debug/ресерсы
 if %errorlevel% neq 0 goto :cmEnd
@@ -170,8 +169,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message></Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/BattolCity/BattolCity/ресерсы D:/BattolCity/BattolCity/строить/создать/Release/ресерсы
 if %errorlevel% neq 0 goto :cmEnd
@@ -226,8 +224,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message></Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/BattolCity/BattolCity/ресерсы D:/BattolCity/BattolCity/строить/создать/MinSizeRel/ресерсы
 if %errorlevel% neq 0 goto :cmEnd
@@ -281,8 +278,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message></Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/BattolCity/BattolCity/ресерсы D:/BattolCity/BattolCity/строить/создать/RelWithDebInfo/ресерсы
 if %errorlevel% neq 0 goto :cmEnd
@@ -379,9 +375,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторМножество.cpp" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\ВекторМножество.h" />
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\РасположениеВекторБуфера.cpp" />
-    <ClInclude Include="..\исходник\Рендор\РасположениеВекторБуфера.h" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\РасположениеВекторБуфера.h" />
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.cpp" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\АнимацияСпрайт.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Рендор\Рендор.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Рендор\Рендор.h" />
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.cpp" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\РесурсныйМенеджер.h" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\stb_image.h" />

@@ -3,7 +3,7 @@
 #include<glm/gtc/matrix_transform.hpp>
 #include "../Ресерсы/РесурсныйМенеджер.h"
 
-Танк::Танк(std::shared_ptr<Рендор::АнимацияСпрайт> пСпрайта, const float скорость, const glm::vec2& позиция)
+Танк::Танк(std::shared_ptr<ДвижокРендеринга::АнимацияСпрайт> пСпрайта, const float скорость, const glm::vec2& позиция)
 	: п_ориентация(Ориентация::Верх)
 	, п_пСпрайта(std::move(пСпрайта))
 	, п_двигаться(false)

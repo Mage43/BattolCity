@@ -10,7 +10,7 @@
 #include <memory>
 #include <string>
 
-namespace Рендор{
+namespace ДвижокРендеринга{
 
 	class Текстуры2D;
 	class ШейдернаяПрограмма;

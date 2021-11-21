@@ -9,6 +9,7 @@
 
 #include "–есерсы/–есурсныйћенеджер.h"
 #include "»гра/»гра.h"
+#include "–ендор/–ендор.h"
 
 
 glm::ivec2 g_window–азмер(640, 480);
@@ -18,7 +19,8 @@ void glfwќбратное¬ызов–азмераќкна(GLFWwindow* window, int шрена, int высота)
 {
     g_window–азмер.x = шрена;
     g_window–азмер.y = высота;
-    glViewport(0, 0, шрена, высота);
+    ƒвижок–ендеринга::–ендор::областьѕросмотра(шрена, высота);
+
 }
 
 void glfwќбратное¬ызовЌажатие(GLFWwindow* window, int клава , int сконирование ода, int действовать, int режим)
@@ -65,13 +67,13 @@ int main(int argc, char** argv)
         std::cout << "Ќе могу загрузить GLAD" << std::endl;
         return -1;
     }
-    /*вод ркндор верси€ OpenGL */
-    std::cout << "–ендор: " << glGetString(GL_RENDERER) << std::endl;
-    std::cout << "OpenGL верси€: " << glGetString(GL_VERSION) << std::endl;
+    /*вод рендер верси€ OpenGL */
+    std::cout << "–ендер: " << ƒвижок–ендеринга::–ендор::ѕолучитьс—троку–ендерера() << std::endl;
+    std::cout << "OpenGL верси€: " << ƒвижок–ендеринга::–ендор::ѕолучить—троку¬ерсии() << std::endl;
 
 
+    ƒвижок–ендеринга::–ендор::установить„истый÷вет(0,0,0,1);
 
-    glClearColor(0, 0, 0, 1);
 
     //наход€м расположение папки исполнитель
     
@@ -91,7 +93,7 @@ int main(int argc, char** argv)
             и_игра.ќбновить(ƒлительность);
      
             /* Render here */
-            glClear(GL_COLOR_BUFFER_BIT);
+            ƒвижок–ендеринга::–ендор::совершенно();
 
             и_игра.воспроизводить();
 

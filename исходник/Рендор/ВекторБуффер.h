@@ -1,7 +1,7 @@
 #pragma once 
 #include <glad/glad.h>
 
-namespace –ендор {
+namespace ƒвижок–ендеринга {
 
 	class ¬екторЅуффер
 	{

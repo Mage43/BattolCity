@@ -3,7 +3,7 @@
 #include <vector>
 #include <glad/glad.h>
 
-namespace –ендор {
+namespace ƒвижок–ендеринга {
 
 	struct –асположение¬екторЅуфераЁлемента {
 		GLint считать;

@@ -1,9 +1,10 @@
 #include "»ндексЅуффер.h"
 
-namespace –ендор {
+namespace ƒвижок–ендеринга {
 
 	»ндексЅуффер::»ндексЅуффер()
-		:п_id(0)
+		: п_id(0)
+		, п_считать(0)
 	{
 
 	}
@@ -18,6 +19,8 @@ namespace –ендор {
 	{
 		п_id = иекторЅуффер.п_id;
 		иекторЅуффер.п_id = 0;
+		п_считать = иекторЅуффер.п_считать;
+		иекторЅуффер.п_считать = 0;
 		return *this;
 
 	}
@@ -26,14 +29,16 @@ namespace –ендор {
 	{
 		п_id = иекторЅуффер.п_id;
 		иекторЅуффер.п_id = 0;
-
+		п_считать = иекторЅуффер.п_считать;
+		иекторЅуффер.п_считать = 0;
 	}
 
-	void »ндексЅуффер::инит(const void* данные, const unsigned int размер)
+	void »ндексЅуффер::инит(const void* данные, const unsigned int считать)
 	{
+		п_считать = считать;
 		glGenBuffers(1, &п_id);
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, п_id);
-		glBufferData(GL_ELEMENT_ARRAY_BUFFER, размер, данные, GL_STATIC_DRAW);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, считать * sizeof(GLuint), данные, GL_STATIC_DRAW);
 
 	}
 

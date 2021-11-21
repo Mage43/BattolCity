@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-namespace –ендор {
+namespace ƒвижок–ендеринга {
 	Ўейдерна€ѕрограмма::Ўейдерна€ѕрограмма(const std::string& ¬ершинныйЎейдер, const std::string& ‘рагментныйЎейдер)
 	{
 		

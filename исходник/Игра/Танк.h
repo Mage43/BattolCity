@@ -3,7 +3,7 @@
 #include <glm/vec2.hpp>
 #include <memory>
 
-namespace Рендор {
+namespace ДвижокРендеринга {
 	class АнимацияСпрайт;
 
 }
@@ -23,7 +23,7 @@ public:
 		Право
 	};
 
-    Танк(std::shared_ptr<Рендор::АнимацияСпрайт> пСпрайта, const float скорость, const glm::vec2& позиция);
+    Танк(std::shared_ptr<ДвижокРендеринга::АнимацияСпрайт> пСпрайта, const float скорость, const glm::vec2& позиция);
 
 	void отопрожениеТанка()const ;
 	void сохранитьОриентация(const Ориентация ориентация);
@@ -34,7 +34,7 @@ public:
 
 private:
 	Ориентация п_ориентация;
-	std::shared_ptr<Рендор::АнимацияСпрайт> п_пСпрайта;
+	std::shared_ptr<ДвижокРендеринга::АнимацияСпрайт> п_пСпрайта;
 	bool п_двигаться;
 	float п_скорость;
 	glm::vec2 п_позиция;
