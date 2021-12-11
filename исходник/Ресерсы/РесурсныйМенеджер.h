@@ -61,6 +61,8 @@ public:
 																	 const unsigned int расположение“екстурЎирена,
 																     const unsigned int расположение“екстур¬ысота);
 
+	static bool загрускаJSON–есурсов(const std::string& JSONPѕуть);
+
 
 private:                                               
 	static  std::string получить—троку‘айла(const std::string& относительный‘айлаѕути) ;

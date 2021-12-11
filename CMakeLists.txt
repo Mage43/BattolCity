@@ -50,6 +50,9 @@ target_link_libraries(${PROJECT_NAME} glfw)
 
 include_directories(внешний/glm)
 
+
+include_directories(внешний/rapidjson/include)
+
 add_subdirectory (внешний/glad)
 target_link_libraries(${PROJECT_NAME} glad)
 
