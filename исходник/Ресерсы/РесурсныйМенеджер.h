@@ -54,7 +54,7 @@ public:
 																		   const std::string& расположение“екстур»м€ = "поумолчанию");
 
 	static std::shared_ptr< ƒвижок–ендеринга::јнимаци€—прайт> получатьјнимаци€—прайт(const std::string& »м€—прайт);
-
+	 
 	static std::shared_ptr< ƒвижок–ендеринга::“екстуры2D> загруска“екстурјтлос(std::string »м€“екстур,
 																	 std::string ѕуть“екстуры,
 																	 std::vector<std::string>расположение“екстур,
@@ -80,5 +80,6 @@ private:
 	static јнимаци€—прайтѕлан п_јнимаци€—прайт;
 
 	static std::string п_ѕуть;
+	
 };
 
