@@ -15,7 +15,7 @@ namespace ƒвижок–ендеринга {
 
 	void  –асположение¬екторЅуфера::добавитьѕоплавок омпоновкиЁлемента(const unsigned int считать, const bool нормализовать)
 	{
-		п_ омпоновкиЁлемента.push_back({static_cast<GLint> (считать), GL_FLOAT, нормализовать, считать *sizeof(GLfloat)  });
+		п_ омпоновкиЁлемента.push_back({static_cast<GLint> (считать), GL_FLOAT, нормализовать, считать * static_cast<unsigned int>(sizeof(GLfloat))  });
 		п_шаг += п_ омпоновкиЁлемента.back().размер;
 	}
 }

@@ -37,7 +37,19 @@
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Игра.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Танк.cpp">
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Уровень.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\Танк.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\ИИгровыхОбъектов.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\КирпичнаяСтена.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\Земля.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -78,7 +90,19 @@
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Игра.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Танк.h">
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Уровень.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\Танк.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\ИИгровыхОбъектов.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\КирпичнаяСтена.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\Земля.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

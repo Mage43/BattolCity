@@ -12,8 +12,8 @@
 #include "–ендор/–ендор.h"
 
 
-glm::ivec2 g_window–азмер(640, 480);
-»гра и_игра(g_window–азмер);
+glm::ivec2 g_window–азмер(16*49,14*49);
+std::unique_ptr<»гра> и_игра= std::make_unique <»гра>(g_window–азмер);
 
 void glfwќбратное¬ызов–азмераќкна(GLFWwindow* window, int шрена, int высота)
 {
@@ -30,7 +30,7 @@ void glfwќбратное¬ызовЌажатие(GLFWwindow* window, int клава , int сконирование о
     {
         glfwSetWindowShouldClose(window, GL_TRUE);
     }
-    и_игра.установить нопку(клава, действовать);
+    и_игра->установить нопку(клава, действовать);
 }
 
 
@@ -79,7 +79,7 @@ int main(int argc, char** argv)
     
     { 
         –есурсныйћенеджер::сохронитьѕуть»сполнимый(argv[0]);
-        и_игра.инициализаци€();
+        и_игра->инициализаци€();
 
         auto последний¬рем€ = std::chrono::high_resolution_clock::now();
 
@@ -93,18 +93,19 @@ int main(int argc, char** argv)
             auto текущий¬рем€ = std::chrono::high_resolution_clock::now();
             uint64_t ƒлительность = std::chrono::duration_cast<std::chrono::nanoseconds>(текущий¬рем€ - последний¬рем€).count();
             последний¬рем€ = текущий¬рем€;
-            и_игра.ќбновить(ƒлительность);
+            и_игра->ќбновить(ƒлительность);
      
             /* Render here */
             ƒвижок–ендеринга::–ендор::совершенно();
 
-            и_игра.воспроизводить();
+            и_игра->воспроизводить();
 
             /* Swap front and back buffers */
             glfwSwapBuffers(window);
 
            
         }
+        и_игра = nullptr;
         –есурсныйћенеджер::выгрузить¬се–есурсный();
     }
     glfwTerminate();

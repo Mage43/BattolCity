@@ -40,8 +40,6 @@ public:
 	static std::shared_ptr< ƒвижок–ендеринга::—прайт> загруска—прайт(const std::string& »м€—прайт,
 														   const std::string& »м€“екстур,
 														   const std::string& »м€Ўедора,
-														   const unsigned int спрайтЎирена, 
-														   const unsigned int спрайт¬ысота,
 														   const std::string& расположение“екстур»м€ = "поумолчанию");
 
 	static std::shared_ptr< ƒвижок–ендеринга::—прайт> получать—прайт(const std::string& »м€—прайт);
@@ -49,8 +47,6 @@ public:
 	static std::shared_ptr< ƒвижок–ендеринга::јнимаци€—прайт> загрускајнимаци€—прайт(const std::string& »м€—прайт,
 																		   const std::string& »м€“екстур,
 																		   const std::string& »м€Ўедора,
-																	       const unsigned int спрайтЎирена,
-																		   const unsigned int спрайт¬ысота,
 																		   const std::string& расположение“екстур»м€ = "поумолчанию");
 
 	static std::shared_ptr< ƒвижок–ендеринга::јнимаци€—прайт> получатьјнимаци€—прайт(const std::string& »м€—прайт);
@@ -63,6 +59,7 @@ public:
 
 	static bool загрускаJSON–есурсов(const std::string& JSONPѕуть);
 
+	static const std::vector<std::vector<std::string>>& получить”ровени() { return п_уровени; }
 
 private:                                               
 	static  std::string получить—троку‘айла(const std::string& относительный‘айлаѕути) ;
@@ -78,6 +75,8 @@ private:
 
 	typedef std::map < const std::string, std::shared_ptr< ƒвижок–ендеринга::јнимаци€—прайт>> јнимаци€—прайтѕлан;
 	static јнимаци€—прайтѕлан п_јнимаци€—прайт;
+
+	static std::vector<std::vector<std::string>> п_уровени;
 
 	static std::string п_ѕуть;
 	

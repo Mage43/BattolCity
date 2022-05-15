@@ -15,14 +15,11 @@ namespace ƒвижок–ендеринга{
 	 public:
 		 јнимаци€—прайт(std::shared_ptr <“екстуры2D> п“екстуры,
 			            std::shared_ptr< Ўейдерна€ѕрограмма>пЎейдерна€ѕрограмма,  
-			            std::string исходный–асположение“екстур,
-			      const glm::vec2& позици€ = glm::vec2(0.f), 
-			      const glm::vec2& размер = glm::vec2(1.f),
-		          const float повород = 0.f);
+			            std::string исходный–асположение“екстур);
 
 		 void вставить—осто€ние(std::string состо€ние, std::vector < std::pair < std::string, uint64_t>> ƒлительность адра“екстуры);
 
-		 void отопрожение—пра()const override;
+		 void отопрожение—пра(const glm::vec2& позици€, const glm::vec2& размер, const float вращение)const override;
 
 		 void сохранить—осто€ние(const std::string& новы—осто€ние);
 

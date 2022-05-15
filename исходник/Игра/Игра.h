@@ -5,6 +5,7 @@
 #include <iostream>
 
 class Танк;
+class Уровень;
 
 class Игра
 {
@@ -31,7 +32,7 @@ private:
    ПИгрыСостояние п_пТекущийИгрыСостояние;
    std::unique_ptr<Танк> п_ПТанк;
    std::unique_ptr<Танк> п_ПТанк1;
-   
+   std::unique_ptr<Уровень> п_ПУровень;
 
 };
 

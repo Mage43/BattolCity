@@ -385,8 +385,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Ресерсы\stb_image.h" />
     <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Игра.cpp" />
     <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Игра.h" />
-    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Танк.cpp" />
-    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Танк.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\Уровень.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\Уровень.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\Танк.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\Танк.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\ИИгровыхОбъектов.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\ИИгровыхОбъектов.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\КирпичнаяСтена.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\КирпичнаяСтена.h" />
+    <ClCompile Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\Земля.cpp" />
+    <ClInclude Include="D:\BattolCity\BattolCity\исходник\Игра\ИгровыеОбъекты\Земля.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:\BattolCity\BattolCity\строить\ZERO_CHECK.vcxproj">
